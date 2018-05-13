@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Creative Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/star.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid firstBlock" id="Home">
+        <header class='container'>
+            <img src="assets/Logo.svg" alt="logo" />
+            <div class="navigation d-flex justify-content-between">
+                <a href='#Home' class="navItem">home</a>
+                <a href='#About' class="navItem">about</a>
+                <a href='#Services' class="navItem">services</a>
+                <a href='#Works' class="navItem">works</a>
+                <a href='#Contact' class="navItem">contact</a>
+            </div>
+        </header>
+        <div class="mainTitle">
+            <p class="largetitle">CreativE DIGITAL Project</p>
+            <p class="textToTitle"> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </div>
+    </div>
+    <main>
+        <section id="About" class="container-fluid">
+            <div class="container d-flex p-0">
+                <div class="blockImg-wrapper">
+                    <div class="blockImg d-flex flex-column align-items-center">
+                        <img src="assets/icon-aboutus.svg" />
+                        <p class="sectionTitle">about us</p>
+                    </div>
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <p class="contentText">Nullam quis risus eget urna
+                        <b>mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper
+                        nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                        auctor.
+                    </p>
+                    <p class="contentText">
+                        <b>Morbi leo</b> risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue
+                        laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                        vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.
+                        Sed posuere consectetur est at lobortis.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section id="Services" class="container-fluid">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="servicesList col-lg-8 col-sm-12">
+                        <div class="row">
+                            <div class="col p-0">
+                                <div class="gray d-flex flex-column align-items-center justify-content-center">
+                                    <img src="assets/Icon-Graphic.svg" />
+                                    <p class="serviceName">GRAPHIC DESIGN</p>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum.</p>
+                                </div>
+                                <div class="no-gray d-flex flex-column align-items-center justify-content-center">
+                                    <img src="assets/Icon-seo.svg" />
+                                    <p class="serviceName">SEO & MARKETING</p>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum.</p>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="no-gray d-flex flex-column align-items-center justify-content-center">
+                                    <img src="assets/Icon-web.svg" />
+                                    <p class="serviceName">WEB DEVELOPMENT</p>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum.</p>
+                                </div>
+                                <div class="gray d-flex flex-column align-items-center justify-content-center">
+                                    <img src="assets/Icon-mobile.svg" />
+                                    <p class="serviceName">MOBILE DEVELOPMENT</p>
+                                    <p class="description">Cras mattis consectetur purus sit amet fermentum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blockImg col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+                        <img src="assets/icon-services.svg" />
+                        <p class="sectionTitle">our services</p>
+                        <p class="text text-center">
+                            <i>“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”</i>
+                            <br/>
+                            <b>- Borat -
+                                <b></b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Works" class="container-fluid">
+            <div class="container p-0 d-flex flex-column align-items-center">
+                <img src="assets/icon-works.svg" />
+                <div class="sectionTitle">RECENT WORKS</div>
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div id="slide1" class="slide"></div>
+                            <div id="slide2" class="slide">Content slide 2</div>
+                            <div id="slide3" class="slide">Content slide 3</div>
+                            <div id="slide4" class="slide">Content slide 3</div>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                </div>
+                <button>View Gallery</button>
+            </div>
+        </section>
+        <section class="team container-fluid d-flex flex-column align-items-center">
+            <img src="assets/icon-team.png" />
+            <div class="sectionTitle">RECENT WORKS</div>
+            <div class="slider container p-0" id="slider2">
+                <div class="slider-container">
+                    <div class="slider2-wrapper">
+                        <div class="slides slide1">
+                            <div class="teamMember d-flex flex-column align-items-center">
+                                <img src="assets/layer-1.png">
+                                <div class="memberDescription">
+                                    <p class="name">Miguel Obrien</p>
+                                    <p class="position">CEO & Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slides slide2">
+                        </div>
+                        <div class="slides slide3">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="prev">
+                        <img src="assets/left.svg" />
+                    </div>
+                    <div class="next">
+                        <img src="assets/right.svg" />
+                    </div>
+                </div>
+        </section>
+        <section id="Contact" class="container-fluid"></section>
+    </main>
+    <footer></footer>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+@font-face{
+    font-family: 'proxima_nova_bold';
+    src: url('./../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('./../fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_regular';
+    src: url('./../fonts/proximanovacond-regular-webfont.woff2') format('woff2'),
+         url('./../fonts/proximanovacond-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_SBd';
+    src: url('./../fonts/proximanovacond-semibold-webfont.woff2') format('woff2'),
+         url('./../fonts/proximanovacond-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sectionTitle{
+    color: #fefbfc;
+    font-family: 'proxima_nova_SBd';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47.13px;
+    text-transform: uppercase;
+}
+body{
+    
+    .firstBlock{
+        width: 100%;
+        height: 1070px;
+        background-image: url(./../assets/block1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0 0 0;
+            margin-bottom: 20%;
+
+            .navigation{
+                flex-basis: 50%;
+                a{
+                outline: none;
+                text-decoration: none;
+                color: #ffffff;
+                font-family: 'proxima_nova_SBd', sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 60.03px;
+                text-transform: uppercase;
+               }
+            }
+        }
+        .mainTitle{
+            text-align: center;
+            color: #fefdfd;
+
+            .largetitle{
+                font-family: 'proxima_nova_bold';
+                font-size: 72px;
+                line-height: 60.22px;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            .textToTitle{
+                margin: 0 auto;
+                font-family: "PT Sans";
+                font-size: 30px;
+                font-style: italic;
+                width: 50%;
+            }
+        }
+    }
+    #About{
+        background-color: #ebebeb;
+        padding: 124px 0;
+
+        .blockImg-wrapper{
+            width: 380px;
+            height: 555px;
+            background-color: #9f9acf;
+            margin-right: 100px;
+            .blockImg{
+            width: 380px;
+            height: 555px;
+            background-image: url(./../assets/deathtostock-wired8.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            img{
+                margin-top: 75px;
+                margin-bottom: 44px;
+            }
+           
+          }
+        }
+        .content{
+            .contentText{
+                color: #665f60;
+                font-family: "PT Sans";
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            button{
+                margin-top: 70px;
+                color: #7d7a7c;
+                font-family: "PT Sans";
+                font-size: 20px;
+                font-style: italic;
+                background-color: none;
+                width: 195px;
+                height: 50px;
+                border: 1px solid #7d7a7c;
+                cursor: pointer;
+                outline: none;
+            }
+            button:hover{
+                background-color: #9f9acf;
+            }
+        }
+    }
+    #Services{
+        background-color: #ebebeb;
+        .servicesList{
+            .gray, .no-gray{
+                padding: 20%;
+                height: 400px;
+                img{
+                    margin-bottom: 30px;
+                }
+                .serviceName{
+                    color: #665f60;
+                    font-family: "PT Sans";
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .description{
+                    text-align: center;
+                    color: #665f60;
+                    font-family: "PT Sans";
+                    font-size: 18px;
+                    font-style: italic;
+                }
+            }
+            .gray{
+                background-color: #dbdbdb;
+            }
+            .gray:hover, .no-gray:hover{
+                border: 4px solid #9f9acf;
+            }
+        }
+        .blockImg{
+            height:799px;
+            background-image: url(./../assets/block3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 116px;
+
+            img{
+                margin-bottom: 30px;
+            }
+            
+            .text{
+                margin-top: 116px;
+                color: #fefcfd;
+                font-family: "PT Sans";
+                font-size: 18px;
+            }
+        }
+    }
+    #Works{
+        width: 100%;
+        height: 1070px;
+        background-image: url(./../assets/block4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.7;
+        padding-top: 50px;
+
+        img{
+            margin-bottom:36px ;
+        }
+        .sectionTitle{
+            margin-bottom: 68px;
+        }
+        .slider{
+            margin: 0 auto;
+            width: 100%;
+            height: 680px;
+            .slider-container {
+                width: 100%;
+                height: 630px;
+                overflow: hidden;
+                .slider-wrapper {
+                    display: flex;
+                    .slide {
+                        width: 70%;
+                        height: 630px;
+                        text-align: center;
+                        margin: 0 auto;
+                        line-height: 360px;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                    #slide1{
+                        background-image: url(./../assets/slide1.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    #slide2 {
+                        background-color: lightgreen;
+                      }
+                      #slide3 {
+                        background-color: yellowgreen;
+                      }
+                      #slide4 {
+                        background-color: salmon;
+                      }
+                }
+            }
+            .slider-nav {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 46px;
+
+                label {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 5px;
+                    background-color: none;
+                    border: 1px solid #fff;
+                    cursor: pointer;
+                    margin: 0 4px;
+                  }
+                  label:hover {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 7px;
+                    background-color:#fff;
+                  }
+              }
+        }
+        button{
+            color: #ffffff;
+            font-family: "PT Sans";
+            font-size: 20px;
+            font-style: italic;
+            background-color: initial;
+            width: 195px;
+            height: 50px;
+            border: 1px solid #7d7a7c;
+            margin-top: 50px;
+            outline: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #9f9acf;
+        }
+    }
+    .team{
+        background-color: #ebebeb;
+        color: #665f60;
+        padding-top: 54px ;
+        .sectionTitle{
+            margin-top: 34px;
+            color: #665f60;
+            shape-margin: 68px;
+        }
+        #slider2{
+            background-color: yellow;
+            width: 100%;
+            position: relative;
+            height: 494px;
+            .slider-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 100%;
+                height: 494px;
+                margin: 0px;
+                overflow: hidden;
+                .slider2-wrapper {
+                    height: 494px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .slides {
+                        height: 494px;
+                        width: 100%;
+                        position: relative;
+                        .teamMember{
+                            position: relative;
+                            img{
+                                z-index: 2;
+                            }
+                            .memberDescription{
+                                background-color: #fff;
+                                .name{
+                                    color: #9f9acf;
+                                    font-family: 'proxima_nova_bold';
+                                    font-size: 24px;
+                                    text-transform: uppercase;
+                                }
+                                .position{
+                                    color: #665f60;
+                                    font-family: "PT Sans";
+                                    font-size: 24px;
+                                    font-style: italic;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}

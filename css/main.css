@@ -1,0 +1,369 @@
+@font-face {
+  font-family: 'proxima_nova_bold';
+  src: url("./../fonts/proximanova-bold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_regular';
+  src: url("./../fonts/proximanovacond-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanovacond-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_SBd';
+  src: url("./../fonts/proximanovacond-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanovacond-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sectionTitle {
+  color: #fefbfc;
+  font-family: 'proxima_nova_SBd';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47.13px;
+  text-transform: uppercase;
+}
+
+body .firstBlock {
+  width: 100%;
+  height: 1070px;
+  background-image: url(./../assets/block1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .firstBlock header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 0 0;
+  margin-bottom: 20%;
+}
+
+body .firstBlock header .navigation {
+  flex-basis: 50%;
+}
+
+body .firstBlock header .navigation a {
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'proxima_nova_SBd', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 60.03px;
+  text-transform: uppercase;
+}
+
+body .firstBlock .mainTitle {
+  text-align: center;
+  color: #fefdfd;
+}
+
+body .firstBlock .mainTitle .largetitle {
+  font-family: 'proxima_nova_bold';
+  font-size: 72px;
+  line-height: 60.22px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+body .firstBlock .mainTitle .textToTitle {
+  margin: 0 auto;
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-style: italic;
+  width: 50%;
+}
+
+body #About {
+  background-color: #ebebeb;
+  padding: 124px 0;
+}
+
+body #About .blockImg-wrapper {
+  width: 380px;
+  height: 555px;
+  background-color: #9f9acf;
+  margin-right: 100px;
+}
+
+body #About .blockImg-wrapper .blockImg {
+  width: 380px;
+  height: 555px;
+  background-image: url(./../assets/deathtostock-wired8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #About .blockImg-wrapper .blockImg img {
+  margin-top: 75px;
+  margin-bottom: 44px;
+}
+
+body #About .content .contentText {
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+body #About .content button {
+  margin-top: 70px;
+  color: #7d7a7c;
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-style: italic;
+  background-color: none;
+  width: 195px;
+  height: 50px;
+  border: 1px solid #7d7a7c;
+  cursor: pointer;
+  outline: none;
+}
+
+body #About .content button:hover {
+  background-color: #9f9acf;
+}
+
+body #Services {
+  background-color: #ebebeb;
+}
+
+body #Services .servicesList .gray, body #Services .servicesList .no-gray {
+  padding: 20%;
+  height: 400px;
+}
+
+body #Services .servicesList .gray img, body #Services .servicesList .no-gray img {
+  margin-bottom: 30px;
+}
+
+body #Services .servicesList .gray .serviceName, body #Services .servicesList .no-gray .serviceName {
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+body #Services .servicesList .gray .description, body #Services .servicesList .no-gray .description {
+  text-align: center;
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: italic;
+}
+
+body #Services .servicesList .gray {
+  background-color: #dbdbdb;
+}
+
+body #Services .servicesList .gray:hover, body #Services .servicesList .no-gray:hover {
+  border: 4px solid #9f9acf;
+}
+
+body #Services .blockImg {
+  height: 799px;
+  background-image: url(./../assets/block3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 116px;
+}
+
+body #Services .blockImg img {
+  margin-bottom: 30px;
+}
+
+body #Services .blockImg .text {
+  margin-top: 116px;
+  color: #fefcfd;
+  font-family: "PT Sans";
+  font-size: 18px;
+}
+
+body #Works {
+  width: 100%;
+  height: 1070px;
+  background-image: url(./../assets/block4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  padding-top: 50px;
+}
+
+body #Works img {
+  margin-bottom: 36px;
+}
+
+body #Works .sectionTitle {
+  margin-bottom: 68px;
+}
+
+body #Works .slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 680px;
+}
+
+body #Works .slider .slider-container {
+  width: 100%;
+  height: 630px;
+  overflow: hidden;
+}
+
+body #Works .slider .slider-container .slider-wrapper {
+  display: flex;
+}
+
+body #Works .slider .slider-container .slider-wrapper .slide {
+  width: 70%;
+  height: 630px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 360px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body #Works .slider .slider-container .slider-wrapper #slide1 {
+  background-image: url(./../assets/slide1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body #Works .slider .slider-container .slider-wrapper #slide2 {
+  background-color: lightgreen;
+}
+
+body #Works .slider .slider-container .slider-wrapper #slide3 {
+  background-color: yellowgreen;
+}
+
+body #Works .slider .slider-container .slider-wrapper #slide4 {
+  background-color: salmon;
+}
+
+body #Works .slider .slider-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+}
+
+body #Works .slider .slider-nav label {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+body #Works .slider .slider-nav label:hover {
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+body #Works button {
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-style: italic;
+  background-color: initial;
+  width: 195px;
+  height: 50px;
+  border: 1px solid #7d7a7c;
+  margin-top: 50px;
+  outline: none;
+  cursor: pointer;
+}
+
+body #Works button:hover {
+  background-color: #9f9acf;
+}
+
+body .team {
+  background-color: #ebebeb;
+  color: #665f60;
+  padding-top: 54px;
+}
+
+body .team .sectionTitle {
+  margin-top: 34px;
+  color: #665f60;
+  shape-margin: 68px;
+}
+
+body .team #slider2 {
+  background-color: yellow;
+  width: 100%;
+  position: relative;
+  height: 494px;
+}
+
+body .team #slider2 .slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 494px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper {
+  height: 494px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides {
+  height: 494px;
+  width: 100%;
+  position: relative;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember {
+  position: relative;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember img {
+  z-index: 2;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription {
+  background-color: #fff;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription .name {
+  color: #9f9acf;
+  font-family: 'proxima_nova_bold';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription .position {
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-style: italic;
+}
