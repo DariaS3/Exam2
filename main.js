@@ -1,5 +1,8 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
+    //scrolling
+
+    // First slider
     var slide = document.getElementsByClassName("slide");
     var sliderNav = document.getElementsByTagName("label");
     function showFirstSlide(event) {
