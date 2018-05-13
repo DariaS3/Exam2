@@ -34,6 +34,10 @@
   text-transform: uppercase;
 }
 
+.socials img {
+  cursor: pointer;
+}
+
 body .firstBlock {
   width: 100%;
   height: 1070px;
@@ -302,16 +306,16 @@ body .team {
   background-color: #ebebeb;
   color: #665f60;
   padding-top: 54px;
+  padding-bottom: 98px;
 }
 
 body .team .sectionTitle {
   margin-top: 34px;
   color: #665f60;
-  shape-margin: 68px;
+  margin-bottom: 68px;
 }
 
 body .team #slider2 {
-  background-color: yellow;
   width: 100%;
   position: relative;
   height: 494px;
@@ -333,17 +337,18 @@ body .team #slider2 .slider-container {
 body .team #slider2 .slider-container .slider2-wrapper {
   height: 494px;
   display: flex;
-  justify-content: space-between;
+  width: 400%;
 }
 
 body .team #slider2 .slider-container .slider2-wrapper .slides {
   height: 494px;
-  width: 100%;
+  width: calc(100% / 4);
   position: relative;
 }
 
 body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember {
   position: relative;
+  width: 350px;
 }
 
 body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember img {
@@ -352,6 +357,10 @@ body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember img {
 
 body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription {
   background-color: #fff;
+  width: 350px;
+  height: 370px;
+  position: absolute;
+  top: 120px;
 }
 
 body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription .name {
@@ -359,6 +368,7 @@ body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memb
   font-family: 'proxima_nova_bold';
   font-size: 24px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription .position {
@@ -366,4 +376,240 @@ body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memb
   font-family: "PT Sans";
   font-size: 24px;
   font-style: italic;
+  margin-bottom: 50px;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription .socials {
+  width: 350px;
+  height: 70px;
+  background-color: #9f9acf;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember .memberDescription .socials img {
+  margin: 0 6px;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slides .teamMember:nth-child(2) {
+  margin: 0 30px;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slide2 {
+  background-color: salmon;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slide3 {
+  background-color: sandybrown;
+}
+
+body .team #slider2 .slider-container .slider2-wrapper .slide4 {
+  background-color: #9f9acf;
+}
+
+body .team #slider2 .nav .prev,
+body .team #slider2 .nav .next {
+  transition: all 0s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .team #slider2 .nav .prev:hover,
+body .team #slider2 .nav .next:hover {
+  background-color: #9f9acf;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+body .team #slider2 .nav .prev {
+  left: -50px;
+}
+
+body .team #slider2 .nav .next {
+  right: -50px;
+}
+
+body #Contact {
+  position: relative;
+}
+
+body #Contact #map {
+  height: 900px;
+}
+
+body #Contact form {
+  height: 900px;
+  width: 100%;
+  background-color: rgba(159, 154, 207, 0.5);
+  position: absolute;
+  bottom: 0px;
+  padding-top: 56px;
+}
+
+body #Contact form img {
+  margin-bottom: 25px;
+}
+
+body #Contact form .sectionTitle {
+  margin-bottom: 52px;
+}
+
+body #Contact form .address {
+  display: flex;
+}
+
+body #Contact form .address .addressImg {
+  width: 90px;
+  height: 90px;
+  background-color: #9f9acf;
+}
+
+body #Contact form .address .addressImg img {
+  margin-bottom: 0px;
+}
+
+body #Contact form .address .addressImg:hover + .addressText,
+body #Contact form .address .addressText:hover {
+  display: block;
+}
+
+body #Contact form .address .addressText {
+  width: 258px;
+  height: 90px;
+  background-color: rgba(235, 235, 235, 0.5);
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 18px 0;
+  display: none;
+}
+
+body #Contact form .tel {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+body #Contact form .tel .telImg {
+  width: 90px;
+  height: 90px;
+  background-color: #9f9acf;
+}
+
+body #Contact form .tel .telImg img {
+  margin-bottom: 0px;
+}
+
+body #Contact form .tel .telImg:hover + .telText,
+body #Contact form .tel .telText:hover {
+  display: block;
+}
+
+body #Contact form .tel .telText {
+  width: 258px;
+  height: 90px;
+  background-color: rgba(235, 235, 235, 0.5);
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 18px 0;
+  display: none;
+}
+
+body #Contact form .inputs {
+  margin-bottom: 28px;
+}
+
+body #Contact form .inputs input {
+  width: 414px;
+  height: 56px;
+  background-color: rgba(235, 235, 235, 0.5);
+  padding: 22px 28px;
+  border: none;
+  margin: 0 16px;
+  color: #fefefe;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+body #Contact form .inputs input::placeholder {
+  color: #fefefe;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+body #Contact form textarea {
+  width: 860px;
+  height: 200px;
+  background-color: rgba(235, 235, 235, 0.5);
+  padding: 22px 28px;
+  border: none;
+  margin: 0 16px;
+  color: #fefefe;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+  margin-bottom: 54px;
+}
+
+body #Contact form textarea::placeholder {
+  color: #fefbfc;
+}
+
+body #Contact form button {
+  color: #ffffff;
+  outline: none;
+  font-family: 'proxima_nova_regular';
+  font-size: 20px;
+  line-height: 26.19px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  width: 294px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  background-color: #9f9acf;
+  box-shadow: 0px 6px 4px -2px rgba(0, 0, 0, 0.6);
+}
+
+body #Contact form button:hover {
+  background-color: #fff;
+  color: #9f9acf;
+}
+
+body footer {
+  width: 100%;
+  height: 185px;
+  background-color: #9f9acf;
+}
+
+body footer p {
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body footer .socials img {
+  margin-right: 25px;
+  width: 32px;
+  height: 32px;
+}
+
+body footer .socials img:last-child {
+  margin-right: 0px;
 }

@@ -35,4 +35,32 @@ document.addEventListener("DOMContentLoaded", function () {
     sliderNav[1].addEventListener("click", showSecondSlide, false);
     sliderNav[2].addEventListener("click", showThirdSlide, false);
     sliderNav[3].addEventListener("click", showLastSlide, false);
+    //Second slider
+    var slidePosition = 0;
+    var slidesCount = document
+        .getElementsByClassName("slider2-wrapper")[0]
+        .getElementsByClassName("slides").length;
+    var maxScroll = 25 * slidesCount;
+    function showPrevSlide(e) {
+        slidePosition += 25;
+        if (slidePosition == 25) {
+            slidePosition = 0;
+        }
+        document.getElementsByClassName("slider2-wrapper")[0].style.transform =
+            "translateX(" + slidePosition + "%)";
+    }
+    function showNextSlide(e) {
+        slidePosition -= 25;
+        if (-slidePosition == maxScroll) {
+            slidePosition = -maxScroll + 25;
+        }
+        document.getElementsByClassName("slider2-wrapper")[0].style.transform =
+            "translateX(" + slidePosition + "%)";
+    }
+    document
+        .getElementsByClassName("prev")[0]
+        .addEventListener("click", showPrevSlide, false);
+    document
+        .getElementsByClassName("next")[0]
+        .addEventListener("click", showNextSlide, false);
 });

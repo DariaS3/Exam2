@@ -129,18 +129,55 @@
             <div class="slider container p-0" id="slider2">
                 <div class="slider-container">
                     <div class="slider2-wrapper">
-                        <div class="slides slide1">
+                        <div class="slides slide1 d-flex justify-content-between">
                             <div class="teamMember d-flex flex-column align-items-center">
                                 <img src="assets/layer-1.png">
-                                <div class="memberDescription">
+                                <div class="memberDescription d-flex flex-column align-items-center justify-content-end">
                                     <p class="name">Miguel Obrien</p>
                                     <p class="position">CEO & Founder</p>
+                                    <div class="socials d-flex justify-content-center align-items-center">
+                                        <img src="assets/behance.svg" />
+                                        <img src="assets/linked-in.svg" />
+                                        <img src="assets/google-.svg" />
+                                        <img src="assets/facebook.svg" />
+                                        <img src="assets/twitter.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamMember d-flex flex-column align-items-center">
+                                <img src="assets/layer-1.png">
+                                <div class="memberDescription d-flex flex-column align-items-center justify-content-end">
+                                    <p class="name">Miguel Obrien</p>
+                                    <p class="position">CEO & Founder</p>
+                                    <div class="socials d-flex justify-content-center align-items-center">
+                                        <img src="assets/behance.svg" />
+                                        <img src="assets/linked-in.svg" />
+                                        <img src="assets/google-.svg" />
+                                        <img src="assets/facebook.svg" />
+                                        <img src="assets/twitter.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamMember d-flex flex-column align-items-center">
+                                <img src="assets/layer-1.png">
+                                <div class="memberDescription d-flex flex-column align-items-center justify-content-end">
+                                    <p class="name">Miguel Obrien</p>
+                                    <p class="position">CEO & Founder</p>
+                                    <div class="socials d-flex justify-content-center align-items-center">
+                                        <img src="assets/behance.svg" />
+                                        <img src="assets/linked-in.svg" />
+                                        <img src="assets/google-.svg" />
+                                        <img src="assets/facebook.svg" />
+                                        <img src="assets/twitter.svg" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="slides slide2">
                         </div>
                         <div class="slides slide3">
+                        </div>
+                        <div class="slides slide4">
                         </div>
                     </div>
                 </div>
@@ -152,10 +189,51 @@
                         <img src="assets/right.svg" />
                     </div>
                 </div>
+            </div>
         </section>
-        <section id="Contact" class="container-fluid"></section>
+        <section id="Contact" class="container-fluid p-0">
+            <div id="map"></div>
+            <form class="d-flex flex-column align-items-center">
+                <img src="assets/point.svg" />
+                <div class="sectionTitle">GET IN TOUCH</div>
+                <div class="address align-self-end">
+                    <div class="addressImg d-flex justify-content-center align-items-center">
+                        <img src="assets/icon-address.svg" />
+                    </div>
+                    <div class="addressText text-center">Ikan Piranha Atas 220C
+                        <br/> Malang - East Java
+                        <br/>Indonesia
+                    </div>
+                </div>
+                <div class="tel align-self-end">
+                    <div class="telImg d-flex justify-content-center align-items-center">
+                        <img src="assets/tel.svg" />
+                    </div>
+                    <div class="telText text-center"> +39 065 32 34 56
+                        <br/> +39 076 12 56 83
+                    </div>
+                </div>
+                <div class="inputs">
+                    <input type="text" placeholder="Your Name *" />
+                    <input type="email" placeholder="Your Email *" />
+                </div>
+                <textarea placeholder="Your Message *"></textarea>
+                <button>SEND MESSAGE</button>
+            </form>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="container-fluid">
+        <div class="container p-0 h-100 d-flex justify-content-between align-items-center">
+            <p>©2014 tulusdriyo. All Rights Reserved.</p>
+            <div class="socials d-flex">
+                <img src="assets/behance.svg" />
+                <img src="assets/linked-in.svg" />
+                <img src="assets/google-.svg" />
+                <img src="assets/facebook.svg" />
+                <img src="assets/twitter.svg" />
+            </div>
+        </div>
+    </footer>
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -163,6 +241,18 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 50.449189, lng: 30.516672 },
+                zoom: 4
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6n4HiDhWFswn1rlANOk7a_ItpLnz8Kc0&callback=initMap" async
+        defer></script>
 </body>
 
 </html>
